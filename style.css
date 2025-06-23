@@ -1,0 +1,126 @@
+/* style.css */
+
+/* Reset some defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set body styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #74ebd5, #acb6e5);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+}
+
+/* Container styling */
+.container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Header */
+.container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #2c3e50;
+}
+
+/* Search form styling */
+.searchData {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.searchData input {
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  flex-grow: 1;
+  font-size: 1rem;
+}
+
+.searchData button {
+  padding: 10px 16px;
+  border: none;
+  background-color: #3498db;
+  color: white;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.searchData button:hover {
+  background-color: #2980b9;
+}
+
+/* Section for displaying weather data */
+.cityWeatherData {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Each details block (country/state/city, weather info) */
+.details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: space-between;
+}
+
+/* Individual card styling */
+.card {
+  background-color: #ecf0f1;
+  flex: 1 1 calc(33% - 16px);
+  min-width: 150px;
+  padding: 16px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card p:first-child {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #34495e;
+}
+
+.card p:last-child {
+  font-size: 1.2rem;
+  color: #2c3e50;
+}
+
+/* Weather icon */
+.card img {
+  margin-bottom: 8px;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 600px) {
+  .card {
+    flex: 1 1 100%;
+  }
+
+  .searchData {
+    flex-direction: column;
+  }
+
+  .searchData button {
+    width: 100%;
+  }
+}
