@@ -108,6 +108,7 @@ body {
 /* Weather icon */
 .card img {
   margin-bottom: 8px;
+  size: 10px;
 }
 
 /* Responsive for smaller screens */
