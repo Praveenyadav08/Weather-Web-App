@@ -24,7 +24,7 @@ const getData =  async (event) => {
 
 const city=inputBox.value;
 
-const fetchData =  await fetch(`http://api.weatherapi.com/v1/current.json?key=80fddd08545d482685580715252206&q=${city}`);
+const fetchData =  await fetch(`https://api.weatherapi.com/v1/current.json?key=80fddd08545d482685580715252206&q=${city}`);
 
 const orgData = await fetchData.json();
 data = orgData;
